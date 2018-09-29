@@ -11,11 +11,15 @@
 
 ### ELK Stack
 
-<div style="text-align:center"><img src="images/elk_stack.png" height="200"></div>
+<p align="center">
+    <img src="images/elk_stack.png" height="200"></div>
+</p>
 
 ### Python Integration
 
-<div style="text-align:center"><img src="images/python.png" height="330"></div>
+<p align="center">
+    <img src="images/python.png" height="330">
+</p>
 
 
 ## Prerequisites
