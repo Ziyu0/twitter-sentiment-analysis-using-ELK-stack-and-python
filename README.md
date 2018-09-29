@@ -31,4 +31,20 @@ Install and setup Elasticsearch and Kibana
 
 ### Google Map API
 
+## Usage
+As the program starts running, you will see ouputs on your console like this:
+```
+==> Start retrieving tweets...
+=> Retrievd a tweet
+[sentiment] positive
+[hashtags] Dunkirk
+[country] None
+[time] 2018-09-29T21:04:01+00:00
+=> Retrievd a tweet
+[sentiment] neutral
+[hashtags] None
+[country] None
+[time] 2018-09-29T21:04:18+00:00
+```
+
 
