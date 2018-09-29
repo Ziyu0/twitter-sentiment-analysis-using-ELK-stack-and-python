@@ -2,7 +2,8 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 
 # Import twitter keys and tokens
-from config import *
+# from config import *
+from my_config import *
 
 # Import listener
 from tools.tweet_listener import TweetStreamListener

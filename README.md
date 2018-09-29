@@ -10,10 +10,12 @@
 ## Technical Background
 
 ### ELK Stack
-![elk](images/elk_stack.png)
+
+<center><img src="images/elk_stack.png" height="200"></center>
 
 ### Python Integration
-![py](images/python.png)
+
+<center><img src="images/python.png" height="330"></center>
 
 
 ## Prerequisites
