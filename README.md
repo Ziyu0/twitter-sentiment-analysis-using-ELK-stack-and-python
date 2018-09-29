@@ -34,6 +34,7 @@ Install and setup Elasticsearch and Kibana
 ## Usage
 As the program starts running, you will see ouputs on your console like this:
 ```
+==> Topics ['#interstellar', '#inception', '#dunkirk', 'interstellar', 'inception', 'dunkirk']
 ==> Start retrieving tweets...
 => Retrievd a tweet
 [sentiment] positive
@@ -45,6 +46,7 @@ As the program starts running, you will see ouputs on your console like this:
 [hashtags] None
 [country] None
 [time] 2018-09-29T21:04:18+00:00
+...
 ```
 
 
