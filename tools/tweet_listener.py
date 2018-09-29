@@ -97,41 +97,6 @@ class TweetStreamListener(StreamListener):
                 country = handler.get_geo_info(latitude, longitude)
         
         return country
-
-    #     """Get country name based on the coordinates of the tweets
-    #     uisng Google Map API
-    #     See https://developers.google.com/maps/documentation/geocoding/start#reverse
-    #     """
-
-    #     country = None
-    #     resp = None
-
-    #     if 'coordinates' in decoded and decoded['coordinates'] is not None:
-    #         # Get latitude/longitude
-    #         latlng = (str(decoded['coordinates']['coordinates'][1])+ ',' + 
-    #                   str(decoded['coordinates']['coordinates'][0]))
-            
-    #         # Request Google API
-    #         link = ("https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
-    #                 latlng + "&key=AIzaSyCFbU5MlcOQwcE0cZdjmULFjmg9Tr2dHC8")
-            
-    #         print("* have latlng", latlng)
-
-    #         resp = requests.get(link)
-    #         print("* response", resp.data)
-
-    #     if resp:
-    #         print("* call country method 2")
-    #         for result in resp.json()['results']:
-    #             for item in result["address_components"]:
-    #                 if 'country' in item['types']:
-    #                     country = item["long_name"]
-    #                     print("2 - country", country)
-    #                     break
-    #                 if country is not None:
-    #                     break
-        
-    #     return country
     
     def _get_timestamp(self, decoded):
         timestamp = datetime.strptime(decoded['created_at'],'%a %b %d %H:%M:%S +0000 %Y').replace(tzinfo=pytz.UTC).isoformat()

@@ -32,12 +32,11 @@ class GoogleAPIHandler:
         print("* response", resp)
 
         if resp:
-            print("* call country method 2")
             for result in resp.json()['results']:
                 for item in result["address_components"]:
                     if 'country' in item['types']:
                         country = item["long_name"]
-                        print("2 - country", country)
+                        print("* get country", country)
                         break
                     if country is not None:
                         break
