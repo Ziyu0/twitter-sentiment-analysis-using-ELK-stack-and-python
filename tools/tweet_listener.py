@@ -9,8 +9,11 @@ from elasticsearch import Elasticsearch
 from tools.google_api_handler import GoogleAPIHandler
 
 class TweetStreamListener(StreamListener):
-    def __init__(self, google_api_key=None):
+    def __init__(self, index, doc_type, google_api_key=None):
         super(TweetStreamListener, self).__init__()
+
+        self.index = index
+        self.doc_type = doc_type
         self.google_api_key = google_api_key
 
     def on_data(self, data):
@@ -48,8 +51,8 @@ class TweetStreamListener(StreamListener):
                "hashtags":hashtags}
         
         es = Elasticsearch()
-        es.index(index="tweet-sentiment",
-                 doc_type="new-tweet",
+        es.index(index=self.index,
+                 doc_type=self.doc_type,
                  body=doc)
 
         return True

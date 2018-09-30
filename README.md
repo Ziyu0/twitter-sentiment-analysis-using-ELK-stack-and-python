@@ -35,6 +35,7 @@ Install and setup Elasticsearch and Kibana
 As the program starts running, you will see ouputs on your console like this:
 ```
 ==> Topics ['#interstellar', '#inception', '#dunkirk', 'interstellar', 'inception', 'dunkirk']
+==> Index: tweet-sentiment, doc type: new-tweet
 ==> Start retrieving tweets...
 => Retrievd a tweet
 [sentiment] positive

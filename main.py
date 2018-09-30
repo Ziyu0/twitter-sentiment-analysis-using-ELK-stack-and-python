@@ -22,12 +22,21 @@ def main():
     else:
         for topic in sys.argv[1:]:
             topics.append(topic)
+    
+    # Change this if you're not happy with the index and type names
+    index = "tweet-sentiment"
+    doc_type = "new-tweet"
 
     print("==> Topics", topics)
+    print("==> Index: {}, doc type: {}".format(index, doc_type))
     print("==> Start retrieving tweets...")
 
     # Create instance of the tweepy tweet stream listener
-    listener = TweetStreamListener(google_api_key)
+    listener = TweetStreamListener(
+                        index,
+                        doc_type,
+                        google_api_key=google_api_key
+                        )
 
     # Set twitter keys/tokens
     auth = OAuthHandler(consumer_key, consumer_secret)
