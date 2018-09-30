@@ -1,8 +1,6 @@
 # Twitter Sentiment Analysis Using ELK Stack and Python
 
-<p align="center">
-    <img src="images/visualize_update.png" height="900"></div>
-</p>
+![visualize](images/visualize_update.png)
 
 
 
@@ -34,7 +32,41 @@ Install and setup Elasticsearch and Kibana
 ### Google Map API
 
 ## Usage
-As the program starts running, you will see ouputs on your console like this:
+### Configure credentials
+In `config.py`, type in your own API keys and tokens.
+```python
+consumer_key = "<Your_Twitter_Consumer_Key>"
+consumer_secret = "<Your_Twitter_Consumer_Secret>"
+access_token = "<Your_Twitter_Access_Token>"
+access_token_secret = "<Your_Twitter_Access_Token_Secret>"
+
+google_api_key = "<Your_Google_Map_API_Key>"
+```
+
+### Change the names of `index` and `doc_type`
+If you are not happy with the default values of `index` and `doc_type`, you can change them at `main.py`, line 27-28.
+```python
+index = "tweet-sentiment"
+doc_type = "new-tweet"
+```
+
+### Run the program with your topics of choice
+Run the following command in your terminal
+```
+python3 main.py <any-topics-that-you-are-interested-in>
+```
+For example
+```
+python3 main.py coldplay muse suede 
+```
+You can also directly run
+```
+python3 main.py
+```
+It will filter tweets on the default topics `#interstellar, #inception, #dunkirk, interstellar, inception, dunkirk`.
+
+### Sample Output
+As the program starts running, you will see ouputs on your console similar to this (the `Topics`, `Index` and `doc type` values might vary depending on your configuration):
 ```
 ==> Topics ['#interstellar', '#inception', '#dunkirk', 'interstellar', 'inception', 'dunkirk']
 ==> Index: tweet-sentiment, doc type: new-tweet
@@ -51,5 +83,7 @@ As the program starts running, you will see ouputs on your console like this:
 [time] 2018-09-29T21:04:18+00:00
 ...
 ```
+You can also check the streaming status by opening `Kibana` and clicking on the `Discover` tab.
 
+![kibaba](images/kibana_1.png)
 
