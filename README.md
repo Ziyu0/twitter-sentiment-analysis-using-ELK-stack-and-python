@@ -1,6 +1,8 @@
 # Twitter Sentiment Analysis Using ELK Stack and Python
 
-![v1](images/visualize_1.png)
+<p align="center">
+    <img src="images/visualize_update.png" height="900"></div>
+</p>
 
 
 
