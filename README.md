@@ -3,6 +3,27 @@
 ![visualize](images/visualize_update.png)
 
 
+## Table of Contents
+<!-- TOC -->
+
+- [Twitter Sentiment Analysis Using ELK Stack and Python](#twitter-sentiment-analysis-using-elk-stack-and-python)
+    - [Table of Contents](#table-of-contents)
+    - [Workflow](#workflow)
+    - [Technical Background](#technical-background)
+        - [ELK Stack](#elk-stack)
+        - [Python Integration](#python-integration)
+    - [Prerequisites](#prerequisites)
+        - [Install ELK Stack](#install-elk-stack)
+        - [Twitter API](#twitter-api)
+        - [Google Map API](#google-map-api)
+    - [Usage](#usage)
+        - [Configure credentials](#configure-credentials)
+        - [Change the names of `index` and `doc_type`](#change-the-names-of-index-and-doc_type)
+        - [Run the program with your topics of choice](#run-the-program-with-your-topics-of-choice)
+    - [Sample Output](#sample-output)
+
+<!-- /TOC -->
+
 
 ## Workflow
 ![workflow](images/workflow.png)
@@ -65,7 +86,7 @@ python3 main.py
 ```
 It will filter tweets on the default topics `#interstellar, #inception, #dunkirk, interstellar, inception, dunkirk`.
 
-### Sample Output
+## Sample Output
 As the program starts running, you will see ouputs on your console similar to this (the `Topics`, `Index` and `doc type` values might vary depending on your configuration):
 ```
 ==> Topics ['#interstellar', '#inception', '#dunkirk', 'interstellar', 'inception', 'dunkirk']
