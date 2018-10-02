@@ -26,7 +26,10 @@
 
 
 ## Workflow
+I created an image to better illustrate how the entire project works.
+
 ![workflow](images/workflow.png)
+
 
 ## Technical Background
 
