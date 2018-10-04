@@ -13,9 +13,6 @@
         - [ELK Stack](#elk-stack)
         - [Python Integration](#python-integration)
     - [Prerequisites](#prerequisites)
-        - [Install ELK Stack](#install-elk-stack)
-        - [Twitter API](#twitter-api)
-        - [Google Map API](#google-map-api)
     - [Usage](#usage)
         - [Configure credentials](#configure-credentials)
         - [Change the names of `index` and `doc_type`](#change-the-names-of-index-and-doc_type)
@@ -40,6 +37,7 @@ I created an image to better illustrate how the entire project works.
 </p>
 
 ### Python Integration
+There are several pacakges in Python that are very useful to this project, see the image below.
 
 <p align="center">
     <img src="images/python.png" height="330">
@@ -47,13 +45,12 @@ I created an image to better illustrate how the entire project works.
 
 
 ## Prerequisites
-
-### Install ELK Stack
-Install and setup Elasticsearch and Kibana
-
-### Twitter API
-
-### Google Map API
+* ELK Stack
+    * Elasticsearch
+    * Kibana
+* Python packages
+* Set up Twitter API
+* Set up Google Maps API
 
 ## Usage
 ### Configure credentials
