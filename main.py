@@ -4,8 +4,7 @@ from tweepy import Stream
 import sys
 
 # Import twitter keys and tokens
-# from config import *
-from my_config import *
+from config import *
 
 # Import listener
 from tools.tweet_listener import TweetStreamListener

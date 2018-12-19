@@ -1,23 +1,7 @@
 # Twitter Sentiment Analysis Using ELK Stack and Python
 
-![visualize](images/visualize_update.png)
+![visualize](images/visualize_update_2.png)
 
-
-## Table of Contents
-<!-- TOC -->
-
-- [Twitter Sentiment Analysis Using ELK Stack and Python](#twitter-sentiment-analysis-using-elk-stack-and-python)
-    - [Table of Contents](#table-of-contents)
-    - [Workflow](#workflow)
-    - [Technical Background](#technical-background)
-        - [ELK Stack](#elk-stack)
-        - [Python Integration](#python-integration)
-    - [Prerequisites](#prerequisites)
-    - [Usage](#usage)
-        - [Configure credentials](#configure-credentials)
-        - [Change the names of `index` and `doc_type`](#change-the-names-of-index-and-doc_type)
-        - [Run the program with your topics of choice](#run-the-program-with-your-topics-of-choice)
-    - [Sample Output](#sample-output)
 
 <!-- /TOC -->
 
@@ -45,12 +29,25 @@ There are several pacakges in Python that are very useful to this project, see t
 
 
 ## Prerequisites
-* ELK Stack
+* [ELK Stack](https://www.elastic.co/products/elasticsearch)
     * Elasticsearch
     * Kibana
 * Python packages
-* Set up Twitter API
-* Set up Google Maps API
+    * Tweepy
+        ```
+        pip install tweepy
+        ```
+    * TextBlob
+        ```
+        pip install -U textblob
+        python -m textblob.download_corpora
+        ```
+    * Elasticsearch-py
+        ```
+        pip install elasticsearch
+        ```
+* Set up [Twitter streaming API](https://developer.twitter.com/en/docs)
+* Set up [Google Maps API](https://developers.google.com/maps/documentation/geocoding/start#get-a-key)
 
 ## Usage
 ### Configure credentials
@@ -107,4 +104,8 @@ As the program starts running, you will see ouputs on your console similar to th
 You can also check the streaming status by opening `Kibana` and clicking on the `Discover` tab.
 
 ![kibaba](images/kibana_1.png)
+
+## References
+1. [Real-time Tweets geolocation visualization with Elasticsearch and Kibana region map](https://whiletrue.run/2017/08/02/real-time-tweets-geolocation-visualization-with-elasticsearch-and-kibana-region-map/)
+2. [Analyzing Twitter with the ELK Stack](https://logz.io/blog/analyzing-twitter-elk-stack/)
 
