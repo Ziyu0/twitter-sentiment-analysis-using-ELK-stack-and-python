@@ -7,7 +7,6 @@
 
 
 ## Workflow
-I created an image to better illustrate how the entire project works.
 
 ![workflow](images/workflow.png)
 
@@ -29,7 +28,7 @@ There are several pacakges in Python that are very useful to this project, see t
 
 
 ## Prerequisites
-* [ELK Stack](https://www.elastic.co/products/elasticsearch)
+* Install and setup [ELK Stack](https://www.elastic.co/products/elasticsearch)
     * Elasticsearch
     * Kibana
 * Python packages
